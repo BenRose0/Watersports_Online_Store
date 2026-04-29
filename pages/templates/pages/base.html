@@ -1,0 +1,22 @@
+<!--templates/base.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Watersports Online Store{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Welcome to the Watersports Online Store{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}
+        <p>Discover our range of watersports equipment and accessories.</p>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2026 Watersports Online Store</p>
+    </footer>
+</body>
+</html>
