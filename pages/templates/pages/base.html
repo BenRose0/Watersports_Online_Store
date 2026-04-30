@@ -1,6 +1,12 @@
 <!--templates/base.html-->
 <!DOCTYPE html>
 <html lang="en">
+    <nav>
+        <ul>
+            <li><a href="{% url 'pages:home' %}">Home</a></li>
+            <li><a href="{% url 'pages:about' %}">About</a></li>
+        </ul>
+    </nav>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

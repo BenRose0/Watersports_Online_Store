@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Watersports_Online_Store.pages',
+    'customer',
 ]
 
 MIDDLEWARE = [
