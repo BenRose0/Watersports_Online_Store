@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f8fb;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #006994;
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: linear-gradient(to right, #0099cc, #00bcd4);
+    color: white;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #003f5c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+}
+
+.form-box {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #006994;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.form-box button {
+    padding: 12px;
+    background-color: #006994;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #00506f;
+}
+
+.auth-links {
+    margin-top: 15px;
+}
+
+.auth-links a {
+    color: #006994;
+    font-weight: bold;
+}
+
+nav form {
+    display: inline;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    color: white;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #f8fbfd;
+    border: 1px solid #d6e6ee;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    color: #006994;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.product-card a {
+    display: inline-block;
+    background-color: #006994;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-card a:hover {
+    background-color: #00506f;
+}
+
+.product-detail img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.cart-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fbfd;
+    border: 1px solid #d6e6ee;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.cart-item h2 {
+    color: #006994;
+    margin-bottom: 8px;
+}
+
+.remove-btn {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.remove-btn:hover {
+    background-color: #922b21;
+}
+
+.cart-total {
+    text-align: right;
+    color: #006994;
+}
+
+.checkout-btn {
+    align-self: flex-end;
+    background-color: #006994;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background-color: #00506f;
+}
