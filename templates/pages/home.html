@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Watersports Online Store{% endblock %}
+
+{% block header %}Welcome to the Watersports Online Store{% endblock %}
+
+{% block content %}
+<p>Discover our range of watersports equipment and accessories.</p>
+
+<div>
+    {% for customer in customers %}
+        <p>{{ customer.name }}</p>
+    {% empty %}
+        <p>No customers yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

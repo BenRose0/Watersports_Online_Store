@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Watersports Online Store{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+   <nav>
+    <ul>
+        <li><a href="{% url 'pages:home' %}">Home</a></li>
+        <li><a href="{% url 'pages:about' %}">About</a></li>
+        <li><a href="/products/">Products</a></li>
+        <li><a href="{% url 'cart:cart_detail' %}">Cart</a></li>
+
+        {% if user.is_authenticated %}
+            <li>Hello, {{ user.username }}</li>
+            <li>
+                <form method="POST" action="{% url 'customer:logout' %}">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        {% else %}
+            <li><a href="{% url 'customer:login' %}">Login</a></li>
+            <li><a href="{% url 'customer:register' %}">Create Account</a></li>
+        {% endif %}
+    </ul>
+</nav>
+
+    <header>
+        <h1>{% block header %}Welcome to the Watersports Online Store{% endblock %}</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        <p>Discover our range of watersports equipment and accessories.</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Watersports Online Store</p>
+    </footer>
+</body>
+
+</html>

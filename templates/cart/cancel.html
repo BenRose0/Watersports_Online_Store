@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Payment Cancelled{% endblock %}
+
+{% block header %}Payment Cancelled{% endblock %}
+
+{% block content %}
+<div class="cart-box">
+    <h2>Payment Cancelled</h2>
+    <p>Your payment was cancelled. Your cart has not been cleared.</p>
+    <a class="checkout-btn" href="{% url 'cart:cart_detail' %}">Back to Cart</a>
+</div>
+{% endblock %}
